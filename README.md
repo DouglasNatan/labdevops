@@ -1,2 +1,3 @@
 # DevOps Hands On
-Aplicação de Exemplo em Python/Flask com teste usando UnitTest.
+Desafio de subida de código no Heroku!
+
