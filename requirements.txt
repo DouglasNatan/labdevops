@@ -1,3 +1,7 @@
 flask                                                                                                                                                                                       
 gunicorn
 flask-wtf
+coverage
+pytest
+pytest-html
+tox
