@@ -24,19 +24,19 @@ from app import create_app
    #     # verifica o retorno do conteudo da pagina
    #     self.assertEqual(self.result.data.decode('utf-8'), "Eu Amo Minha Família!S2...!")
 
-    def test_deploy():
-        assert add(2, 2) == 4
+     def test_deploy():
+         assert add(2, 2) == 4
 
-   @pytest.fixture
-    def client():
-        app = create_app()
-        app.config["TESTING"] = True
-        with app.test_client() as client:
-            yield client
-
-    def test_square(client):
-        result = client.get('/')
-        assertEqual(self.result.data.decode('utf-8'), "Eu Amo Minha Família!S2...!")
+     @pytest.fixture
+     def client():
+         app = create_app()
+         app.config["TESTING"] = True
+         with app.test_client() as client:
+             yield client
+ 
+     def test_square(client):
+         result = client.get('/')
+         assertEqual(self.result.data.decode('utf-8'), "Eu Amo Minha Família!S2...!")
 
 
 if __name__ == '__main__':
