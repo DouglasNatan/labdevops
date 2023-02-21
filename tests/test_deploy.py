@@ -21,7 +21,10 @@
 #    def test_deploy(self):
 #        assert add(2, 2) == 4
 
+import pytest
+import Flask
 from labdevops import add
+from app import app
 
 def test_deploy():
     assert add(2, 2) == 4
