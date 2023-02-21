@@ -26,5 +26,9 @@ from labdevops import add
 def test_deploy():
     assert add(2, 2) == 4
 
-def pagina_inicial():
-    assert testRequest() == "Eu Amo Minha Família!S2...!"
+@pytest.fixture
+def client(app):
+    client = app.test_client()
+    result = client.get('/')
+    return result == "Eu Amo Minha Família!S2...!"
+
