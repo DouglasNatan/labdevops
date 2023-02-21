@@ -22,6 +22,13 @@
 #        assert add(2, 2) == 4
 
 from labdevops import add
+from labdevops import app
 
 def test_deploy():
     assert add(2, 2) == 4
+
+def setUp(self):
+    # cria uma instância do unittest, precisa do nome "setUp"
+    self.app = app.test_client()
+    # envia uma requisicao GET para a URL
+    self.result = self.app.get('/')
