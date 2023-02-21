@@ -23,7 +23,7 @@
 
 import pytest
 from labdevops import add
-from app import app
+from labdevops import app
 
 def test_deploy():
     assert add(2, 2) == 4
