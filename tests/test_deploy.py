@@ -22,8 +22,8 @@
 #        assert add(2, 2) == 4
 
 import pytest
-from labdevops import add
-from labdevops import labdevops
+import labdevops
+#from labdevops import add
 
 def test_deploy():
     assert add(2, 2) == 4
