@@ -23,16 +23,11 @@
 
 import pytest
 from labdevops import add
-from flask import Flask
-from flask_wtf.csrf import CSRFProtect
 from labdevops import app
 
 def test_deploy():
     assert add(2, 2) == 4
 
-@pytest.fixture
-def client(app):
-    client = app.test_client()
-    result = client.get('/')
-    return result == "Eu Amo Minha Família!S2...!"
+def test_app():
+    assert app() == "Eu Amo Minha Família!S2...!"
 
