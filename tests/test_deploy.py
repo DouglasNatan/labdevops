@@ -6,7 +6,7 @@ import pytest
 
 class Test(unittest.TestCase):
     def setUp(self):
-        labdevops.app.testing = True
+        self.app.testing = True
 
         # cria uma instância do unittest, precisa do nome "setUp"
         self.app = app.test_client()
