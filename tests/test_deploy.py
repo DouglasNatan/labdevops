@@ -23,6 +23,7 @@
 
 import pytest
 from labdevops import add
+from labdevops import app
 import unittest
 
 class Test(unittest.TestCase):
