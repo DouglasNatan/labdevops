@@ -23,6 +23,8 @@
 
 import pytest
 from labdevops import add
+from flask import Flask
+from flask_wtf.csrf import CSRFProtect
 from labdevops import app
 
 def test_deploy():
