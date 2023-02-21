@@ -22,7 +22,6 @@
 #        assert add(2, 2) == 4
 
 import pytest
-import flask
 from labdevops import add
 from app import app
 
