@@ -23,7 +23,7 @@ from labdevops import create_app
    # def test_conteudo(self):
    #     # verifica o retorno do conteudo da pagina
    #     self.assertEqual(self.result.data.decode('utf-8'), "Eu Amo Minha Família!S2...!")
-@pytest.fixture
+
 def test_deploy():
     assert add(2, 2) == 4
 
@@ -33,6 +33,7 @@ def client():
     app.config["TESTING"] = True
     with app.test_client() as client:
         yield client
+
 @pytest.fixture        
 def test_square(client):
     result = client.get('/')
