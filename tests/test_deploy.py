@@ -21,5 +21,5 @@
 #    def test_deploy(self):
 #        assert add(2, 2) == 4
 
-def test_deploy(self):
+def test_deploy():
     assert add(2, 2) == 4
