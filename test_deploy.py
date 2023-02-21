@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-#from app import app
-from labdevops import app
+from app import app
+#from labdevops import app
 import unittest
 
 class Test(unittest.TestCase):
