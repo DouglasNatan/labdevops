@@ -28,6 +28,6 @@ from labdevops import app
 def test_deploy():
     assert add(2, 2) == 4
 
-def test_app(app):
-    assert app() == "Eu Amo Minha Família!S2...!"
+def test_app():
+    assert app(app) == "Eu Amo Minha Família!S2...!"
 
