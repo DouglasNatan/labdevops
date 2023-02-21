@@ -3,7 +3,7 @@
 import unittest
 import pytest
 from labdevops import add
-from app import create_app
+from labdevops import create_app
 
 
 #class Test(unittest.TestCase):
