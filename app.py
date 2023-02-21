@@ -3,7 +3,7 @@ from flask_wtf.csrf import CSRFProtect
 
 def create_app():
     app = Flask(__name__)    
-    csrf = CSRFProtect(app)  
+    CSRFProtect(app)  
     return app    
 
     
