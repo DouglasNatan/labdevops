@@ -26,7 +26,7 @@ import labdevops
 import unittest
 
 from labdevops import add
-from . import app
+from labdevops.app import app
 
 class Test(unittest.TestCase):
     def test_deploy():
