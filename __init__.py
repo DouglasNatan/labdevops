@@ -1,7 +1,7 @@
 def add(x, y):
     return x + y
 
-def app():
+def validate(a):
     client = app.test_client()
     result = client.get('/')
     return result

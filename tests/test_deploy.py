@@ -22,12 +22,12 @@
 #        assert add(2, 2) == 4
 
 import pytest
-import labdevops
-#from labdevops import add
+from labdevops import add
+from labdevops import validate
 
 def test_deploy():
     assert add(2, 2) == 4
 
 def test_app():
-    assert app() == "Eu Amo Minha Família!S2...!"
+    assert validate("Eu Amo Minha Família!S2...!") == "Eu Amo Minha Família!S2...!"
 
