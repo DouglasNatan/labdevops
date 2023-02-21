@@ -22,16 +22,6 @@
 #        assert add(2, 2) == 4
 
 from labdevops import add
-from flask import Flask
-
-app = Flask(__name__)
-
 
 def test_deploy():
     assert add(2, 2) == 4
-
-def setUp():
-    # cria uma instância do unittest, precisa do nome "setUp"
-    app = app.test_client()
-    # envia uma requisicao GET para a URL
-    result = app.get('/')
