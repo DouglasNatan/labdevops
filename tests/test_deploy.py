@@ -25,3 +25,6 @@ from labdevops import add
 
 def test_deploy():
     assert add(2, 2) == 4
+
+def pagina_inicial():
+    assert testRequest() == "Eu Amo Minha Família!S2...!"
