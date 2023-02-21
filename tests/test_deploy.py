@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 #from app import app
 from labdevops import add
+import app
 import unittest
 import pytest
 
-app = __import__("app.py")
-
 class Test(unittest.TestCase):
     def setUp(self):
+        labdevops.app.testing = True
+
         # cria uma instância do unittest, precisa do nome "setUp"
         self.app = app.test_client()
 
