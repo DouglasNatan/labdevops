@@ -26,7 +26,7 @@ import labdevops
 import unittest
 
 from labdevops import add
-from app import app
+from app import labdevops
 
 class Test(unittest.TestCase):
     def test_deploy():
@@ -45,3 +45,6 @@ class Test(unittest.TestCase):
     def test_conteudo(self):
         # verifica o retorno do conteudo da pagina
         self.assertEqual(self.result.data.decode('utf-8'), "Eu Amo Minha Família!S2...!")
+
+if __name__ == '__main__':
+    unittest.main()
