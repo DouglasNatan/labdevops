@@ -7,6 +7,9 @@ on:
     branches:
       - main
 
+env:
+  PYTHON_VERSION: '3.11.x'
+
 jobs:
   Build:
     runs-on: ubuntu-latest
@@ -17,7 +20,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.7.11'
+          python-version: ${{PYTHON_VERSION}}
 
       - name: Install Requirements
         #run:  pip install flask flask-wtf 
