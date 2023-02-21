@@ -22,9 +22,11 @@
 #        assert add(2, 2) == 4
 
 import pytest
+import labdevops
+import unittest
+
 from labdevops import add
 from labdevops import app
-import unittest
 
 class Test(unittest.TestCase):
     def test_deploy():
