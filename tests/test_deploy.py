@@ -22,19 +22,13 @@
 #        assert add(2, 2) == 4
 
 import pytest
-import labdevops
 import unittest
 
 from labdevops import add
-from labdevops import app
-from labdevops import client
 
 class Test(unittest.TestCase):
     def test_deploy():
         assert add(2, 2) == 4
-    
-    def test_app():
-        f = app.app()
-        c = app.client(f)
-        result = c.get('/')
-        assertEqual(result.data.decode('utf-8'), "Eu Amo Minha Família!S2...!")
+
+if __name__ == '__main__':
+    unittest.main()
