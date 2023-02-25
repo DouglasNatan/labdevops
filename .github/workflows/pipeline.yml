@@ -24,7 +24,11 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Unit Test
-        run: python -m unittest -v test
+        #run: python -m unittest -v test
+        run: |
+          coverage run --source=app -m pytest tests/test.py
+          coverage report -m
+          coverage xml -i
 
   sonarcloud:
     name: SonarCloud

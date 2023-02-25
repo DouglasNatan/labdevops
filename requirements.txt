@@ -3,5 +3,6 @@ gunicorn
 flask-wtf
 coverage
 pytest
+pytest-cov
 pytest-html
 tox
