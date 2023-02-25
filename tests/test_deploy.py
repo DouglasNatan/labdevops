@@ -24,8 +24,8 @@ import pytest
 #        # verifica o retorno do conteudo da pagina
 #        self.assertEqual(self.result.data.decode('utf-8'), "Eu Amo Minha Família!S2...!")
 
-   def test_deploy():
-       assert add(2, 2) == 4
+def test_deploy():
+    assert add(2, 2) == 4
 
 #@pytest.fixture
 #def client():
