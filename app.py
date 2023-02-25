@@ -11,6 +11,6 @@ def pagina_inicial():
     return "Eu Amo Minha Família!S2...!"
 
     
-#if __name__ == '__main__':
-#    app = create_app()
-#    app.run()
+if __name__ == '__main__':
+    app = create_app()
+    app.run()
