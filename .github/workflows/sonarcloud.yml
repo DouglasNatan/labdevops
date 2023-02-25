@@ -57,8 +57,8 @@ jobs:
           args:             
             # Unique keys of your project and organization. You can find them in SonarCloud > Information (bottom-left menu)
             # mandatory
-            #-Dsonar.projectKey=
-            #-Dsonar.organization=
+            -Dsonar.projectKey=DouglasNatan_labdevops
+            -Dsonar.organization=douglasnatan
             -Dsonar.projectKey=DouglasNatan_labdevops
             -Dsonar.organization=douglasnatan
             -Dsonar.python.coverage.reportPaths=coverage.xml
