@@ -5,7 +5,6 @@ def create_app():
     app = Flask(__name__)    
     CSRFProtect(app)  
     return app    
-
     
 @app.route("/")
 def pagina_inicial():
