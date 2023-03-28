@@ -12,20 +12,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: 3.11.x
 
       - name: Install Requirements
-        #run:  pip install flask flask-wtf 
         run: pip install -r requirements.txt
+        #run:  pip install flask pytest pytest-cov flask-wtf
 
       - name: Unit Test
         run: |
-          coverage run --source=app -m pytest tests/test_deploy.py
+          coverage run --source=app -m unittest discover -p "*test_deploy.py"
           coverage report -m
           coverage xml -i
 
