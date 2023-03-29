@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from labdevops import add
-from app import app
+from . import app
 import unittest
 #import pytest
 
