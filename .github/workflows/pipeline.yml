@@ -20,12 +20,12 @@ jobs:
           python-version: 3.11.x
 
       - name: Install Requirements
-        run: pip install -r requirements.txt
-        #run:  pip install flask pytest pytest-cov flask-wtf
+        #run: pip install -r requirements.txt
+        run: pip install flask pytest pytest-cov flask-wtf
 
       - name: Unit Test
         run: |
-          coverage run --source=app -m unittest discover -p "*test_deploy.py"
+          coverage run --source=app -m pytest tests/test_deploy.py
           coverage report -m
           coverage xml -i
 
