@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-from . import app
 from labdevops import add
+from app import app
 import unittest
-import pytest
-#from labdevops import create_app
-
+#import pytest
 
 class Test(unittest.TestCase):
     def setUp(self):
@@ -22,18 +20,3 @@ class Test(unittest.TestCase):
     def test_deploy():
         assert add(2, 2) == 4
 
-#@pytest.fixture
-#def client():
-#    app = create_app()
-#    app.config["TESTING"] = True
-#    with app.test_client() as client:
-#        yield client
-#
-#@pytest.fixture        
-#def test_square(client):
-#    result = client.get('/')
-#    assertEqual(self.result.data.decode('utf-8'), "Eu Amo Minha Família!S2...!")
-#
-#
-#if __name__ == '__main__':
-#    unittest.main()
