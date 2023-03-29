@@ -62,10 +62,11 @@ jobs:
             -Dsonar.projectKey=DouglasNatan_labdevops
             -Dsonar.organization=douglasnatan
             -Dsonar.python.coverage.reportPaths=coverage.xml
-            -Dsonar.sources=.
-            -Dsonar.projectBaseDir=./
-            -Dsonar.tests=./tests/test_deploy.py
-            -Dsonar.verbose=true
+            #-Dsonar.sources=.
+            #-Dsonar.projectBaseDir=./
+            #-Dsonar.tests=./tests/test_deploy.py
+            #-Dsonar.verbose=true
+            
             # Comma-separated paths to directories containing main source files.
             #-Dsonar.sources= # optional, default is project base directory
             # When you need the analysis to take place in a directory other than the one from which it was launched
