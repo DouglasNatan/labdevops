@@ -24,7 +24,7 @@ jobs:
 
       - name: Unit Test
         run: |
-          coverage run --source=. -m pytest tests/test_deploy.py
+          coverage run --source=. -m pytest test.py
           coverage report -m
           coverage xml -i
           
