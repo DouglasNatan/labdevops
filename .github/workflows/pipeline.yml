@@ -24,6 +24,7 @@ jobs:
 
       - name: Unit Test
         run: |
+          coverage erase
           coverage run --source=app -m pytest test.py
           coverage report -m
           coverage xml -i
