@@ -16,6 +16,8 @@ class Test(unittest.TestCase):
     def test_conteudo(self):
         # verifica o retorno do conteudo da pagina
         self.assertEqual(self.result.data.decode('utf-8'), "Eu Amo Minha Família!S2...!")
+    def teste_ok(self):
+        self.assertEqual(app.pagina_inicial(), "Eu Amo Minha Família!S2...!")
     #def test_deploy():
     #    assert add(2, 2) == 4
 
