@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 from app import app
-from labdevops import add
 import unittest
 
 class Test(unittest.TestCase):
