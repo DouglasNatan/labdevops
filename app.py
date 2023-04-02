@@ -8,7 +8,8 @@ csrf = CSRFProtect(app)
 
 @app.route("/")
 def pagina_inicial():
-    return "Fase 5 - Concluída com sucesso!!!"
+    #return "Fase 5 - Concluída com sucesso!!!"
+    return render_template('index.html')
 
 if __name__ == '__main__':
     port = os.getenv('PORT')
