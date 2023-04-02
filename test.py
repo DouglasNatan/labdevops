@@ -15,7 +15,7 @@ class Test(unittest.TestCase):
         self.assertEqual(self.result1.status_code, 200)
     def test_conteudo(self):
         # verifica o retorno do conteudo da pagina
-        self.assertEqual(self.result1.data.decode('utf-8'), "Fase 5 - Concluída!!!")
+        self.assertEqual(self.result1.data.decode('utf-8'), "Fase 5 - Concluída com sucesso!!!")
     def test_request1(self):
         self.assertEqual(self.result.status_code, 200)
 

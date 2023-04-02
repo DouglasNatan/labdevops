@@ -12,7 +12,7 @@ def pagina_inicial():
 
 @app.route("/teste")
 def pagina_inicial_teste():    
-    return "Fase 5 - Concluída!!!"
+    return "Fase 5 - Concluída com sucesso!!!"
 
 if __name__ == '__main__':
     port = os.getenv('PORT')
