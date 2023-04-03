@@ -16,4 +16,4 @@ class Test(unittest.TestCase):
     #    self.assertEqual(self.result.data.decode('utf-8'), "Fase 5 - Concluída com sucesso!!!")
 
 if __name__ == "__main__":
-        unittest.main()
+    unittest.main()
